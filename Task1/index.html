@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal with URL Search Params</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 h-screen flex items-center justify-center">
+    <!-- Button to open Modal -->
+    <button id="openModalBtn" class="bg-blue-500 text-black px-4 py-2 rounded">
+      Open Modal
+    </button>
+
+    <!-- Modal Overlay -->
+    <div
+      id="modalOverlay"
+      class="fixed inset-0 bg-gray-800 bg-opacity-50 hidden z-50 flex justify-center items-center"
+    >
+      <!-- Modal Content -->
+      <div class="bg-white p-8 rounded-lg shadow-lg relative w-1/3">
+        <button
+          id="closeModalBtn"
+          class="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
+        >
+          &times;
+        </button>
+        <h2 class="text-xl font-semibold mb-4">This is a Modal Component</h2>
+        <p class="text-gray-600">
+          This is the content inside the modal component. You can close it by
+          clicking outside the modal or using the close button.
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
